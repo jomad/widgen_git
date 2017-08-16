@@ -18,7 +18,7 @@
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -50,7 +50,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         android:adjustViewBounds="true"
-                        android:background="#c8e6c9" />
+                        android:contentDescription="weed_image"
+                        android:background="#c8e6c9"/>
 
                     <TextView
                         android:id="@+id/plant_id"
@@ -58,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:gravity="center_horizontal"
-                        android:text="Plant name"
+                        android:text="@string/plant_name"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                         android:textColor="#000000"
                         android:textSize="18sp"
@@ -80,7 +81,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingBottom="8dp">
+                    android:paddingBottom="14dp">
 
                     <android.support.v7.widget.CardView
                         android:id="@+id/profile_card_view"
@@ -99,6 +100,7 @@
                             android:layout_marginStart="20dp"
                             android:orientation="horizontal"
                             android:paddingBottom="12dp"
+                            android:baselineAligned="false"
                             android:paddingTop="8dp"
                             android:scrollbars="horizontal">
 
