@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--xmlns:app="http://schemas.android.com/apk/lib/com.app.example.android.widgen">-->
+    <!--xmlns:compat="http://schemas.android.com/tools"-->
+
+
+    <item
+        android:id="@+id/acton_illustrations"
+        android:title="@string/illustations"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/acton_browseList"
+        android:title="@string/browseList"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_zz_search" />
+
+    <item
+        android:id="@+id/action_skilltest"
+        android:title="@string/skill_test"
+        android:icon="@drawable/ic_zz_clear"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_homepage"
+        android:title="@string/homepage"
+        android:icon="@drawable/ic_zz_clear"
+        app:showAsAction="never" />
+
+</menu>

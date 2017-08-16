@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/canvas_background_ii"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+
+    tools:context="com.example.android.widgenV1.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"/>
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+
+            android:layout_weight="8"
+            android:isScrollContainer="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:id="@+id/textView_gen_property"
+                        android:text="@string/gen_property"
+                        style="@style/description_weed"
+                        tools:text="@string/gen_property"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/characters"
+                                android:text="Family Name" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:layout_gravity="bottom"
+                                android:text="Genus" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:text="Life Habit" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="growthHabit"
+                                android:text="Growth Habit" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="4.5"
+                            android:orientation="vertical"
+                            android:textAlignment="textStart">
+
+                            <Spinner
+                                android:id="@+id/spinner_family"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:layout_gravity="top"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_genus"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_lifeHabit"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_growthHabit"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_leaf_property"
+                        style="@style/description_weed"
+                        android:text="Leaf Property"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="leafType"
+                                android:text="Type" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:layout_gravity="bottom"
+                                android:onClick="leafArrangementClick"
+                                android:text="Arrangement" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="leafPositionCLick"
+                                android:text="Position" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="leafAttachment"
+                                android:text="Attachment" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:layout_gravity="bottom"
+                                android:onClick="leafMarginClick"
+                                android:text="Margin" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="leafVenationClick"
+                                android:text="Venation" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:text="Surface" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:layout_gravity="bottom"
+                                android:onClick="leafShapeClick"
+                                android:text="Shape" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="leafBaseClick"
+                                android:text="Base" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="leafApexClick"
+                                android:text="Apex" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="4.5"
+                            android:orientation="vertical"
+                            android:textAlignment="textStart">
+
+                            <Spinner
+                                android:id="@+id/spinner_leafType"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_arrangement"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_leafPosition"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_attachment"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_margin"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_venation"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_surface"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_shape"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_base"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_apex"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_flower_property"
+
+                        android:text="Flower Property"
+                        style="@style/description_weed"
+                        tools:text="@string/gen_property" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="corollaPics"
+                                android:text="Corolla Type" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:layout_gravity="bottom"
+                                android:onClick="flowerSymmetry"
+                                android:text="Symmetry" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:onClick="inflorescence_click"
+                                android:text="Inflorescence" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:text="Color" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:text="Position" />
+
+                            <TextView
+                                style="@style/characters"
+                                android:text="Attachment" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_weight="4.5"
+                            android:orientation="vertical"
+                            android:textAlignment="textStart">
+
+                            <Spinner
+                                android:id="@+id/spinner_corolla"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_symmetry"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_inflorescence"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_color"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_position"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:prompt="@string/family_prompt"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@+id/spinner_flowerAttachment"
+                                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:paddingBottom="8dp"
+                                android:spinnerMode="dropdown" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ic_clear_all"
+                android:clickable="true" />
+
+
+            <ImageView
+                android:id="@+id/button"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_zz_search"
+                android:clickable="true" />
+
+            <EditText
+                android:id="@+id/editTextPercentMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:cursorVisible="true"
+                android:ems="6"
+                android:hint="Percent Match"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textStyle="normal|italic" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

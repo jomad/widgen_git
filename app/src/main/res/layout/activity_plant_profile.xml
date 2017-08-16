@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/image_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:elevation="12dp"
+
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/plant_ImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:background="#c8e6c9" />
+
+                    <TextView
+                        android:id="@+id/plant_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal"
+                        android:text="Plant name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/image_card_view"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/profile_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        app:cardCornerRadius="10dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginStart="20dp"
+                            android:orientation="horizontal"
+                            android:paddingBottom="12dp"
+                            android:paddingTop="8dp"
+                            android:scrollbars="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="24dp"
+                                android:layout_weight="1.4"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Family Name" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Common Name" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Life Habit" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Growth Habit" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Leaf Shape" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Arrangement" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Leaf Margin" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Leaf Base" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Leaf Apex" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Venation" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Inflorescence" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Corolla Type" />
+
+                                <TextView
+                                    style="@style/plant_profile"
+                                    android:text="Color" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/editText_family"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_common"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_lifeHabit"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_growthHabit"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_leafShape"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_leafArrangement"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_leafMargin"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_leafBase"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_leafApex"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_venation"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_inflorescence"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_corolla"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                                <TextView
+                                    android:id="@+id/editText_color"
+                                    style="@style/editText_profile"
+                                    android:inputType="textPersonName" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/expanded_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/description_zoom_touch_close"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

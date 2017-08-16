@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/lineColor">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/image_zoomed"
+        android:layout_height="0dp"
+        android:onClick="return_plantprofile"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+
+                android:layout_margin="0dp"
+                android:onClick="back_weed_id"
+                android:adjustViewBounds="false"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:textAlignment="gravity" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

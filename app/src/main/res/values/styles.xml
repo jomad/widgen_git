@@ -1,0 +1,162 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeDefault" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:editTextStyle">@style/EditTextAppTheme</item>-->
+
+    </style>
+
+    <style name="MyTheme"
+        parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="HeadingMainActivity">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">16.5sp</item>
+    </style>
+
+    <style name="MainButtonStyle">
+        <!--<item name="android:backgroundTint">@color/colorPrimaryDark</item>-->
+        <!--<item name="android:textColor">@color/lineColor</item>-->
+        <item name="android:layout_width">175dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Light.SearchResult.Title</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginBottom">8dp</item>
+
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+    </style>
+
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_textfield_disabled_focused_holo_light</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+
+    <style name="spinner_bground">Gray</style>
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">#008</item>
+
+    </style>
+
+    <style name="characters">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Small</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+
+    </style>
+
+    <style name="characters_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">39dp</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Small</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="delete_icon">
+        <item name="android:layout_height">39dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:textAlignment">viewEnd</item>
+    </style>
+
+    <style name="description_weed">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Medium</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="plant_profile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="heading_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="editText_profile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:actionBarWidgetTheme">@style/PopupMenuTextView</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+
+        <!-- Change Overflow Menu ListView Item Height & Property -->
+        <item name="android:listPreferredItemHeightSmall">10dp</item>
+        <item name="android:listPreferredItemPaddingLeft">5dp</item>
+        <item name="android:listPreferredItemPaddingRight">5dp</item>
+    </style>
+
+    <!-- Change Overflow Menu ListView Divider Property -->
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">#FF0000</item>
+        <item name="android:dividerHeight">2dp</item>
+    </style>
+
+    <!-- Change Overflow Menu ListView Text Size and Text Size -->
+    <style name="PopupMenuTextView" parent="@style/android:Theme.Holo.Light">
+        <item name="android:textColor">#00FF00</item>
+        <item name="android:textSize">5sp</item>
+    </style>
+
+    <!-- Change Overflow Menu Background -->
+    <style name="PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">#e6e0de</item>
+    </style>
+
+    <style name="splashScreenTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/commelina_icon</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+</resources>

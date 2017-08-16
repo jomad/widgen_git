@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.widgenV1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    .
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/commelina_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeDefault">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/description_activity_title">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".SkillTestCustom" />
+        <activity
+            android:name=".LeafAttachment"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Attachment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeafVenation"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Venation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeafBase"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Base"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeafApex"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Apex"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlowerSymmetry"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Flower Symmetry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeafMargin"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Margin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeafPosition"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Position"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InflorescenceType"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Types of Inflorescence"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeafArrangement"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Arrangement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeafShape"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Shape"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FrontPage"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeafType"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Leaf Types"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlantList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/identity_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GrowthHabit"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/growthHabit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlantProfile"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/profile_activity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CorollaType"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Corolla Types"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/search_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchResultAcitivty"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SkillTest"
+            android:label="Skill Test"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ChallengeType"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Skills Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomChallenge"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/custom_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity2"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/identify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlowerPosition"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlowerAttachment"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlowerColor"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LifeHabit"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/lifeHabit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FamilyNameSelector"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/familySelect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GenusSelector"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/genusSelect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BrowsePlant"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlantListRecyclerView"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Possible Identity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ZoomedImage"
+            android:label="Profile" />
+        <activity android:name=".ZoomedSearchImage" />
+        <activity android:name=".AboutApp" />
+
+        <activity android:name=".AllUrlImages"></activity>
+    </application>
+
+</manifest>
