@@ -51,7 +51,7 @@ public class PlantListRecyclerViewAdapter extends RecyclerView.Adapter
         holder.percentScore.setText(plantsList.get(position).getPercentScore());
         holder.familyName.setText(plantsList.get(position).getFamilyName());
         Picasso.with(context).load(plantsList.get(position).getImageUrl())
-                .error(R.drawable.default_image)
+                .error(R.mipmap.ic_search_black)
                 .fit().centerCrop()
                 .into(holder.plantImage);
     }
