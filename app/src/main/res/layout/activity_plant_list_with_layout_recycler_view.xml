@@ -67,8 +67,8 @@
                 android:layout_height="250dp"
                 android:layout_below="@+id/familyName_rv"
                 android:layout_marginTop="4dp"
-                android:background="#c8e6c9" />
 
+                android:background="@color/lineColor" />
 
 
     </RelativeLayout>
