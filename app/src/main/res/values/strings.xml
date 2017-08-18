@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">WIDGenV1</string>
     <string name="gen_property">General Property</string>
-    <string name="family_name">Joden</string>
+    <string name="family_name">Family Name</string>
     <string name="family_prompt">Select</string>
     <string name="description_zoom_touch_close">just description</string>
     <string name="description_image_1">just desctiption </string>
@@ -9585,6 +9585,8 @@
     <string name="familySelect">Select Family</string>
     <string name="about_app">About WIDGen</string>
     <string name="plant_name">Plant Name</string>
+    <string name="percent_match">100%</string>
+    <string name="weed_image">Image of weed based from attribute matching</string>
 
 
 </resources>
