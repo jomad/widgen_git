@@ -6,9 +6,9 @@
     .
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@drawable/commelina_icon"
         android:label="@string/app_name"
-        android:fullBackupContent="true"
         android:supportsRtl="true"
         android:theme="@style/AppThemeDefault">
         <activity android:name=".SkillTestCustom" />
@@ -170,8 +170,8 @@
             android:label="Profile" />
         <activity android:name=".ZoomedSearchImage" />
         <activity android:name=".AboutApp" />
-
         <activity android:name=".AllUrlImages" />
+        <activity android:name=".SpinnerActivity"></activity>
     </application>
 
 </manifest>

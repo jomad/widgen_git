@@ -40,12 +40,22 @@ public class MainActivity2 extends RootActivity{
             leafAttachmentTest, marginTest, venationTest, surfaceTest, shapeTest, baseTest, apexTest, corollaTest,
             symmetryTest, inflorescenceTest, colorTest, flowerPositionTest, flowerAttachmentTest, nullTest;
 
+    private String [] growthHabitString;
+    private Integer [] growthHabitImageArray;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        growthHabitString = new String[]{"Erect", "Shrub", "Ascending", "Cespitose", "Vine",
+                            "Stoloniferous", "Repent", "Procumbent", "Decumbent", "Floating"};
+
+        growthHabitImageArray = new Integer[] {R.mipmap.ic_launcher, R.drawable.zgh_shrub, R.drawable.zgh_ascending,
+                R.drawable.zgh_cespitose, R.drawable.zgh_vine, R.drawable.zgh_stoloniferous, R.drawable.zgh_repent,
+                R.drawable.zgh_procumbent, R.drawable.zgh_decumbent, R.mipmap.ic_launcher};
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -493,6 +503,11 @@ public class MainActivity2 extends RootActivity{
     public void leafType(View view) {
         Intent i = new Intent(getApplicationContext(), LeafType.class);
         startActivity(i);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 
     public void leafShapeClick(View view) {

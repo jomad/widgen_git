@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -27,6 +28,7 @@ import static com.example.android.widgenV1.GrowthHabit.MY_PREFS_NAME;
 public class LeafShape extends AppCompatActivity {
     Toolbar toolbar;
     String mselectedFromList;
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,8 +81,10 @@ public class LeafShape extends AppCompatActivity {
                         Intent intent = new Intent(LeafShape.this, MainActivity2.class);
                         SharedPreferences.Editor editor = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE).edit();
                         editor.putString("leafShape", "Elliptic");
-                        editor.commit();
+                        editor.apply();
+//                        onBackPressed();
                         startActivity(intent);
+
                         break;
 
                     case 1:
