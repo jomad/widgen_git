@@ -129,6 +129,10 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/identify"
             android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity3"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/identify"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FlowerPosition"
             android:configChanges="orientation|keyboardHidden"

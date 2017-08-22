@@ -41,7 +41,7 @@ public class FrontPage extends RootActivity {
     }
 
     public void about_app(View view) {
-        Intent i = new Intent(FrontPage.this, SpinnerActivity.class);
+        Intent i = new Intent(FrontPage.this, MainActivity3.class);
         startActivity(i);
     }
 }
