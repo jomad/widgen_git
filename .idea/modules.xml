@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/WIDGen.iml" filepath="$PROJECT_DIR$/WIDGen.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/widgen_git.iml" filepath="$PROJECT_DIR$/widgen_git.iml" />
     </modules>
   </component>
 </project>

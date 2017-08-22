@@ -27,8 +27,8 @@ import static com.example.android.widgenV1.GrowthHabit.MY_PREFS_NAME;
 
 public class LeafShape extends AppCompatActivity {
     Toolbar toolbar;
-    String mselectedFromList;
-    EditText editText;
+//    String mselectedFromList;
+//    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +38,6 @@ public class LeafShape extends AppCompatActivity {
         //        add toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
         ArrayList<CharacterImageLabel> characterImageLabels = new ArrayList<CharacterImageLabel>();
 

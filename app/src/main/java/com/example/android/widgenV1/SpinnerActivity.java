@@ -26,7 +26,7 @@ public class SpinnerActivity extends AppCompatActivity {
         ImageView imageView =(ImageView)findViewById(R.id.spinnerImages);
         Spinner spinner = (Spinner) findViewById(R.id.mySpinner);
 
-        SpinnerAdapter adapter = new SpinnerAdapter(this, R.layout.spinner_growthhabit_layout, growthHabitString, growthHabitImageArray);
+        SpinnerAdapter adapter = new SpinnerAdapter(this, R.layout.spinner_illustration_layout, growthHabitString, growthHabitImageArray);
         spinner.setAdapter(adapter);
     }
 }
