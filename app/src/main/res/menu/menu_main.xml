@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!--xmlns:app="http://schemas.android.com/apk/lib/com.app.example.android.widgen">-->
-    <!--xmlns:compat="http://schemas.android.com/tools"-->
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/lib/com.app.example.android.widgenV1">
+    <!--xmlns:compat="http://schemas.android.com/tools">-->
 
     <item
         android:id="@+id/acton_illustrations"
@@ -27,5 +26,7 @@
         android:title="@string/homepage"
         android:icon="@drawable/ic_zz_clear"
         app:showAsAction="never" />
+
+
 
 </menu>

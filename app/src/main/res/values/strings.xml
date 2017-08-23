@@ -9573,7 +9573,7 @@
     <string name="homepage">Home</string>
     <string name="illustations">Weed Identification</string>
     <string name="identify">Identification</string>
-    <string name="search_by_name">Search Name</string>
+    <string name="search_by_name">SEARCH</string>
     <string name="skills_test">Skills Test</string>
     <string name="about_us">WIdGen</string>
     <string name="custom_list">Custom List</string>
@@ -9587,6 +9587,7 @@
     <string name="plant_name">Plant Name</string>
     <string name="percent_match">100%</string>
     <string name="weed_image">Image of weed based from attribute matching</string>
+    <string name="search_title">Search here</string>
 
 
 </resources>
