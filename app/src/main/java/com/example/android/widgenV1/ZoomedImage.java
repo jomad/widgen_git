@@ -20,6 +20,7 @@ public class ZoomedImage extends AppCompatActivity {
     Toolbar toolbar;
     ImageView imageZoomed;
     ArrayList<String> finalList;
+    String plantForProfile;
     TextView plantName;
 
 
@@ -30,15 +31,17 @@ public class ZoomedImage extends AppCompatActivity {
 
         SharedPreferences myPref = getSharedPreferences(MY_PREFS_NAME,MODE_PRIVATE);
         String namePlant = myPref.getString("plantForProfile", "");
+        Intent i = getIntent();
+        plantForProfile = i.getStringExtra("plantForProfile");
         plantName = (TextView) findViewById(R.id. textView_plant_name);
-        plantName.setText(namePlant);
+        plantName.setText(plantForProfile);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         imageZoomed = (ImageView) findViewById(R.id. image_zoomed);
 
-        Intent i = getIntent();
+//        Intent i = getIntent();
         finalList = i.getStringArrayListExtra("key");
         System.out.print("ZoomedImage finalList " + finalList);
         String imageUrl = i.getStringExtra("imageUrl");

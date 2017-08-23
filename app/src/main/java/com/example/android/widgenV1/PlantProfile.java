@@ -166,6 +166,7 @@ public class PlantProfile extends RootActivity {
                 i.putExtra("imageUrl", imageUrl[index]);
                 i.putExtra("resID", resID);
                 i.putStringArrayListExtra("key", finalList);
+                i.putExtra("plantForProfile", plantForProfile);
                 startActivity(i);
             }
         });

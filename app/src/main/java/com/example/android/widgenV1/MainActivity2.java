@@ -8,7 +8,6 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputFilter;
 import android.util.Log;
@@ -19,11 +18,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import static android.R.color.black;
 import static com.example.android.widgenV1.GrowthHabit.MY_PREFS_NAME;
 
@@ -51,7 +53,7 @@ public class MainActivity2 extends RootActivity{
         setContentView(R.layout.activity_main2);
 
         growthHabitString = new String[]{"Erect", "Shrub", "Ascending", "Cespitose", "Vine",
-                            "Stoloniferous", "Repent", "Procumbent", "Decumbent", "Floating"};
+                "Stoloniferous", "Repent", "Procumbent", "Decumbent", "Floating"};
 
         growthHabitImageArray = new Integer[] {R.mipmap.ic_launcher, R.drawable.zgh_shrub, R.drawable.zgh_ascending,
                 R.drawable.zgh_cespitose, R.drawable.zgh_vine, R.drawable.zgh_stoloniferous, R.drawable.zgh_repent,
@@ -174,12 +176,12 @@ public class MainActivity2 extends RootActivity{
                 leafArrangement, leafPosition, leafAttachment, margin, venation, surface, shape, base, apex,
                 corolla, symmetry, inflorescence, color, flowerPosition, flowerAttachment};
 
-        ImageView computeBtn = (ImageView) findViewById(R.id.button);
+        ImageButton computeBtn = (ImageButton) findViewById(R.id.button);
 
-        final EditText percentMatchText = (EditText) findViewById(R.id.editTextPercentMatch);
+        /*final EditText percentMatchText = (EditText) findViewById(R.id.editTextPercentMatch);
         percentMatchText.getBackground().setColorFilter(getResources().getColor(black), PorterDuff.Mode.SRC_IN);
         percentMatchText.setFilters(new InputFilter[]{new InputFilterMinMax("1", "100")});
-
+*/
 //      Running the program
         if (computeBtn != null) {
 
@@ -313,18 +315,18 @@ public class MainActivity2 extends RootActivity{
 //                            Make an int [] to store percent score
                             ArrayList<String> percentScore = new ArrayList<>();
 
-                            String string = percentMatchText.getText().toString();
-                            System.out.println("This is string " + string);
+//                            System.out.println("This is string " + string);
+//                            String string = percentMatchText.getText().toString();
 
                             double desiredScore;
                             /*percentMatch is the user's desired match in percent to avoid listing
                             too much informaiton*/
                             double percentMatchInt;
 
-                            switch (string) {
-
-                                case (""):
-                                    percentMatchInt = 1;
+//                            switch (string) {
+//
+//                                case (""):
+                            percentMatchInt = 1;
 /*
                                     context = getApplicationContext();
                                     text = "Enter a value for PERCENT MATCH." + "\nDefault is 1";
@@ -339,14 +341,14 @@ public class MainActivity2 extends RootActivity{
 */
 
 
-                                    break;
-
-                                default:
-
-                                    percentMatchInt = Double.parseDouble(percentMatchText.getText().toString());
-                                    break;
-
-                            }
+//                                    break;
+//
+//                                default:
+//
+//                                    percentMatchInt = Double.parseDouble(percentMatchText.getText().toString());
+//                                    break;
+//
+//                            }
 
                             double percentMatch = percentMatchInt / 100;
                             //        int roundedPercentMatch = (int) percentMatch;
@@ -407,7 +409,7 @@ public class MainActivity2 extends RootActivity{
             });
         }
 
-        ImageView clearEntries = (ImageView) findViewById(R.id.clear);
+        ImageButton clearEntries = (ImageButton) findViewById(R.id.clear);
 
         clearEntries.setOnClickListener(new View.OnClickListener() {
             @Override
