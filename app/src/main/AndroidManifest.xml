@@ -129,7 +129,8 @@
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/identify"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainActivity3"
+        <activity
+            android:name=".MainActivity3"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/identify"
             android:screenOrientation="portrait" />
@@ -175,7 +176,8 @@
         <activity android:name=".ZoomedSearchImage" />
         <activity android:name=".AboutApp" />
         <activity android:name=".AllUrlImages" />
-        <activity android:name=".SpinnerActivity"></activity>
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".BrowseInput"></activity>
     </application>
 
 </manifest>
