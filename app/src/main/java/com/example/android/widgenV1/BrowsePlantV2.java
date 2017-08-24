@@ -35,7 +35,7 @@ public class BrowsePlantV2 extends AppCompatActivity {
     private String [] eNameArray, scientificName, commonName;
     private String namePlant;
     private ArrayList<String> sNameListArray;
-    private ArrayList<String> searchList;
+//    private ArrayList<String> searchList;
     private String[][] arrayOfArray;
     private AutoCompleteTextView autoCompleteTextView;
 
@@ -50,6 +50,9 @@ public class BrowsePlantV2 extends AppCompatActivity {
         eNameArray = res.getStringArray(R.array.englishName_array);
         scientificName = res.getStringArray(R.array.scientificName_array);
         commonName = res.getStringArray(R.array.commonNameData);
+        
+//      added 8/25 - Initialized the ArrayList searchlist        
+        ArrayList<String> searchList = new ArrayList<>();
 
         searchList.addAll(Arrays.asList(eNameArray));
         searchList.addAll(Arrays.asList(scientificName));
