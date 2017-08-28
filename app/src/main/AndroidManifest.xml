@@ -166,7 +166,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
        <activity
-            android:name="com.example.android.widgenLabV3.BrowsePlantV2"
+            android:name=".BrowsePlantV2"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
